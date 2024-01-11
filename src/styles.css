@@ -71,6 +71,13 @@ body {
   text-decoration: none;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
 section {
   margin: 0 auto;
   padding: 100px;
@@ -252,5 +259,12 @@ footer a {
 
   .embed {
     aspect-ratio: 16/9;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    aspect-ratio: 1/1;
   }
 }
